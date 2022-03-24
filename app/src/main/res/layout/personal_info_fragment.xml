@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.PersonalInfoFragment">
+    tools:context=".ui.main.fragments.PersonalInfoFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -13,6 +13,7 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,12 +42,14 @@
 
             <EditText
                 android:id="@+id/editTextTextPersonName"
+                style="text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:ems="10"
+                android:hint="Full Name"
                 android:inputType="textPersonName"
-                android:text="Full Name" />
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/editTextTextEmailAddress"
@@ -54,8 +57,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:ems="10"
+                android:hint="Email Address"
                 android:inputType="textEmailAddress"
-                android:text="Email Address" />
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/editTextPhone"
@@ -63,8 +67,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:ems="10"
+                android:hint="Phone Number"
                 android:inputType="phone"
-                android:text="Phone Number" />
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/editTextTextPostalAddress"
@@ -72,8 +77,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:ems="10"
+                android:hint="Residence Address"
                 android:inputType="textPostalAddress"
-                android:text="Residence Address" />
+                android:minHeight="48dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -81,23 +87,26 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:text="Career Objective"
+                android:textAppearance="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editTextTextMultiLine"
+                android:id="@+id/editTextCareerObjective"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:ems="10"
                 android:gravity="start|top"
-                android:inputType="textMultiLine" />
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </LinearLayout>
     </ScrollView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/toWorkSummary"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

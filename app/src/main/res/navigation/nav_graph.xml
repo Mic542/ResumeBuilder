@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.cvbuilder.ui.main.fragments.CVListFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_personalInfoFragment"
+            app:destination="@id/personalInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workExperienceFragment"
+        android:name="com.example.cvbuilder.ui.main.fragments.WorkExperienceFragment"
+        android:label="work_experience_fragment"
+        tools:layout="@layout/work_experience_fragment" >
+        <action
+            android:id="@+id/action_workExperienceFragment_to_skillFragment"
+            app:destination="@id/skillFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/skillFragment"
+        android:name="com.example.cvbuilder.ui.main.fragments.SkillFragment"
+        android:label="skill_fragment"
+        tools:layout="@layout/skill_fragment" >
+        <action
+            android:id="@+id/action_skillFragment_to_educationFragment"
+            app:destination="@id/educationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalInfoFragment"
+        android:name="com.example.cvbuilder.ui.main.fragments.PersonalInfoFragment"
+        android:label="personal_info_fragment"
+        tools:layout="@layout/personal_info_fragment" >
+        <action
+            android:id="@+id/action_personalInfoFragment_to_workExperienceFragment"
+            app:destination="@id/workExperienceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/educationFragment"
+        android:name="com.example.cvbuilder.ui.main.fragments.EducationFragment"
+        android:label="education_fragment"
+        tools:layout="@layout/education_fragment" >
+        <action
+            android:id="@+id/action_educationFragment_to_projectListFragment"
+            app:destination="@id/projectListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectListFragment"
+        android:name="com.example.cvbuilder.ui.main.fragments.ProjectListFragment"
+        android:label="project_list_fragment"
+        tools:layout="@layout/project_list_fragment" />
+</navigation>

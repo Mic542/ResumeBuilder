@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CV Builder</string>
+    <string name="add_new_resume">Add New Resume</string>
+
+    <string-array name="durations">
+        <item>Year(s)</item>
+        <item>Month(s)</item>
+    </string-array>
+
 </resources>
