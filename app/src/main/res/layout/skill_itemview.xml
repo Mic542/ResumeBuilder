@@ -20,21 +20,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="16dp"
                 android:layout_marginStart="16dp"
-                android:layout_weight="5"
+                android:layout_weight="1"
                 android:ems="10"
                 android:hint="Skill"
                 android:inputType="textPersonName"
                 android:minHeight="48dp" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/deleteButton"
-                android:layout_width="48dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:contentDescription="Delete Skill"
-                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+                android:layout_margin="8dp"
+                android:layout_weight="0"
+                android:text="Delete"
+                android:textSize="14sp" />
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
