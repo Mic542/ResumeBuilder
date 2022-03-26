@@ -1,9 +1,9 @@
 package com.example.cvbuilder.data
 
 data class ProjectDetail(
-    val projectName : String,
-    val teamSize : Int,
-    val summary : String,
-    val technologyUsed : String,
-    val role : String
+    var projectName : String,
+    var teamSize : String,
+    var summary : String,
+    var technologyUsed : String,
+    var role : String
 )
