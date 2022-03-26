@@ -10,12 +10,17 @@ import javax.inject.Inject
 class CVRepositoryImpl @Inject constructor(private val cvDao: BaseCVDao) : CVRepository {
 
     @WorkerThread
-    override fun insert(cv: CVData) {
+    override suspend fun insert(cv: CVData) {
         cvDao.insert(cv)
     }
 
     override fun getAll() : Flow<List<CVData>> {
         return cvDao.getAll()
+    }
+
+    @WorkerThread
+    override suspend fun delete(cv: CVData) {
+        cvDao.delete(cv)
     }
 
 }

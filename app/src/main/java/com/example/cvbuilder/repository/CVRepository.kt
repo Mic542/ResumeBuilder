@@ -4,6 +4,7 @@ import com.example.cvbuilder.data.CVData
 import kotlinx.coroutines.flow.Flow
 
 interface CVRepository {
-    fun insert(cv : CVData)
+    suspend fun insert(cv : CVData)
     fun getAll() : Flow<List<CVData>>
+    suspend fun delete(cv : CVData)
 }

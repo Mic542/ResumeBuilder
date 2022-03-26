@@ -6,6 +6,6 @@ import kotlinx.coroutines.flow.Flow
 interface BaseCVDao {
     fun getAll(): Flow<List<CVData>>
     fun loadByIds(uid: Int): Flow<CVData>
-    fun insert(vararg cv: CVData)
-    fun delete(user: CVData)
+    suspend fun insert(vararg cv: CVData)
+    suspend fun delete(vararg cv: CVData)
 }
