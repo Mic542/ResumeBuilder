@@ -1,6 +1,5 @@
 package com.example.cvbuilder.ui.main.itemview.adapter
 
-import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -38,16 +37,8 @@ class WorkExperienceAdapter(private var workExperiences: ArrayList<WorkExperienc
                 binding.durationText.setText(duration)
                 binding.spinner.setSelection(this.yearOrMonth)
 
-                binding.companyNameText.doAfterTextChanged {
-                    if(!it.isNullOrEmpty()) {
-                        workExperiences[position].companyName = it.toString()
-                    }
-                }
-                binding.durationText.doAfterTextChanged {
-                    if(!it.isNullOrEmpty()) {
-                        workExperiences[position].duration = it.toString().toLong()
-                    }
-                }
+                binding.companyNameText.doAfterTextChanged { workExperiences[position].companyName = it.toString() }
+                binding.durationText.doAfterTextChanged { workExperiences[position].duration = it.toString() }
                 binding.spinner.selected {
                     workExperiences[position].yearOrMonth = it
                 }
