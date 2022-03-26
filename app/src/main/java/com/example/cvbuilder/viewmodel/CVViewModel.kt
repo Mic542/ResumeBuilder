@@ -25,6 +25,10 @@ class CVViewModel @Inject constructor(private val cvRepository: CVRepository) : 
         cvRepository.insert(cv)
     }
 
+    fun delete(cv: CVData) = viewModelScope.launch {
+        cvRepository.delete(cv)
+    }
+
     fun generateUniqueId() : Int = ((Date().getTime() / 1000L) % Integer.MAX_VALUE).toInt()
 
 }
