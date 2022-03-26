@@ -1,7 +1,8 @@
 package com.example.cvbuilder.data
 
 data class EducationDetail(
-    val graduation : String,
-    val passingYear : Int,
-    val finalScore: String
+    var institution : String,
+    var graduation : String,
+    var passingYear : String?,
+    var finalScore: String
 )
