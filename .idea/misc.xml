@@ -3,12 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/cv_itemview.xml" value="0.33" />
         <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/cv_list_menu.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/education_fragment.xml" value="0.2866847826086957" />
+        <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/education_itemview.xml" value="0.5" />
+        <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/fragment_export.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/main_activity.xml" value="0.358695652173913" />
         <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/main_fragment.xml" value="0.23255813953488372" />
         <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/personal_info_fragment.xml" value="0.358695652173913" />
         <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/project_list_fragment.xml" value="0.2866847826086957" />
+        <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/project_list_itemview.xml" value="0.33" />
+        <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/save_fragment.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/skill_fragment.xml" value="0.2866847826086957" />
         <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/skill_itemview.xml" value="0.5" />
         <entry key="..\:/Users/mch99/AndroidStudioProjects/CVBuilder/app/src/main/res/layout/work_experience_fragment.xml" value="0.2866847826086957" />
