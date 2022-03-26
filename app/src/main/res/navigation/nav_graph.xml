@@ -54,5 +54,30 @@
         android:id="@+id/projectListFragment"
         android:name="com.example.cvbuilder.ui.main.fragments.ProjectListFragment"
         android:label="project_list_fragment"
-        tools:layout="@layout/project_list_fragment" />
+        tools:layout="@layout/project_list_fragment" >
+        <action
+            android:id="@+id/action_projectListFragment_to_saveDataFragment"
+            app:destination="@id/saveDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveDataFragment"
+        android:name="com.example.cvbuilder.ui.main.fragments.SaveDataFragment"
+        android:label="save_fragment"
+        tools:layout="@layout/save_fragment" >
+        <action
+            android:id="@+id/action_saveDataFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_saveDataFragment_to_exportFragment"
+            app:destination="@id/exportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exportFragment"
+        android:name="com.example.cvbuilder.ui.main.fragments.ExportFragment"
+        android:label="fragment_export"
+        tools:layout="@layout/fragment_export" >
+        <action
+            android:id="@+id/action_exportFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
 </navigation>
