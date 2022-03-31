@@ -39,7 +39,6 @@ class CVListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = MainFragmentBinding.inflate(inflater, container, false)
-        (activity as AppCompatActivity).supportActionBar?.title = "CV/Resume List"
         return binding.root
     }
 

@@ -34,7 +34,7 @@ class ExportFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentExportBinding.inflate(inflater, container, false)
-        (activity as AppCompatActivity).supportActionBar?.title = "Export CV/Resume"
+        (activity as AppCompatActivity).supportActionBar?.title = "Exxport CV/Resume"
         val cvData = cvViewModel.currentCVData
         val htmlContent = StringBuilder()
 
